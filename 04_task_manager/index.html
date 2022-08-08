@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- styles CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- normalize CSS -->
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <form class='form'>
+        <h4>task manager</h4>
+        <div class="form-control">
+            <input type="text" name="name" class='form-input task-input' placeholder='e.g. wash dishes'>
+            <button type='submit' class='btn submit-btn'>submit</button>
+        </div>
+        <small class='form-alert'>there was an error</small>
+    </form>
+    <section class="tasks-container">
+        <p class="loading-text">Loading...</p>
+        <div class="tasks">
+            <!-- single task -->
+            <div class="single-task">
+                <h5><i class="fa-solid fa-circle-check"></i>first name</h5>
+                <div class='task-links'>
+                    <!-- edit link -->
+                    <a href="task.html" class='edit-link'><i class="fa-solid fa-pen-to-square"></i></a>
+                    <!-- delete link -->
+                    <button type='button' class='delete-btn' data-id='"123'><i
+                            class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+            <!-- end fo single task -->
+            <!-- single task -->
+            <div class="single-task task-completed">
+                <h5><i class="fa-solid fa-circle-check"></i>second name</h5>
+                <div class='task-links'>
+                    <!-- edit link -->
+                    <a href="task.html" class='edit-link'><i class="fa-solid fa-pen-to-square"></i></a>
+                    <!-- delete link -->
+                    <button type='button' class='delete-btn' data-id='"123'><i
+                            class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+            <!-- end fo single task -->
+            <!-- single task -->
+            <div class="single-task">
+                <h5><i class="fa-solid fa-circle-check"></i>third name</h5>
+                <div class='task-links'>
+                    <!-- edit link -->
+                    <a href="task.html" class='edit-link'><i class="fa-solid fa-pen-to-square"></i></a>
+                    <!-- delete link -->
+                    <button type='button' class='delete-btn' data-id='"123'><i
+                            class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+            <!-- end fo single task -->
+        </div>
+    </section>
+</body>
+
+</html>
