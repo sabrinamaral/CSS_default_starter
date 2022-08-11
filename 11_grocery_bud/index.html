@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grocery bud</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./normalize.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="section-center">
+        <form class='grocery-form'>
+            <div class="alert alert-danger">please enter a value</div>
+            <h4>grocery bud</h4>
+            <div class="form-row">
+                <input type="text" name="item" id="item" class='form-input' placeholder='e.g. eggs'>
+                <button type="submit" class='btn submit-btn text-small'>submit</button>
+            </div>
+        </form>
+        <!-- list -->
+        <div class="grocery-container">
+            <div class="grocery-list">
+                <!-- grocery item -->
+                <article class='grocery-item'>
+                    <span class='title'> apples</span>
+                    <div class="btn-container">
+                        <!-- edit button -->
+                        <button type='button' class='edit-btn'>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <!-- delete button -->
+                        <button type='button' class='delete-btn'>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </article>
+                <!-- end of grocery item -->
+                <!-- grocery item -->
+                <article class='grocery-item'>
+                    <span class='title'> oranges</span>
+                    <div class="btn-container">
+                        <!-- edit button -->
+                        <button type='button' class='edit-btn'>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <!-- delete button -->
+                        <button type='button' class='delete-btn'>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </article>
+                <!-- end of grocery item -->
+                <!-- grocery item -->
+                <article class='grocery-item'>
+                    <span class='title'> bananas</span>
+                    <div class="btn-container">
+                        <!-- edit button -->
+                        <button type='button' class='edit-btn'>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <!-- delete button -->
+                        <button type='button' class='delete-btn'>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </article>
+                <!-- end of grocery item -->
+            </div>
+        </div>
+        <button type='button' class='clear-btn'>clear items</button>
+
+    </section>
+</body>
+
+</html>
